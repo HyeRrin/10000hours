@@ -6,4 +6,5 @@ var inputText = function () {
     var wannabeTime = document.querySelector("#inputTime").value;
     document.querySelector("#resultTime").innerText= parseInt(10000/wannabeTime);
     document.querySelector("#inputTime").value="";
+    document.getElementById('resultTime').scrollIntoView();
 }
