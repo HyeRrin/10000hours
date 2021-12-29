@@ -204,7 +204,7 @@ input::placeholder{
 }
 
 
-@media screen and (max-width:360px){
+@media screen and (max-width:380px){
     #app{
         padding:0 24px 32px;
     }
@@ -294,11 +294,11 @@ input::placeholder{
         margin: 69px auto 62px;
     }
     .cont-inp .txt-time{
-        margin-bottom:49px;
+        margin:0 13px 49px 13px;
     }
     .cont-inp .btn-exc{
         margin-bottom:64px;
-        padding: 12px 54px;
+        padding: 12px 35px;
     }
     .cont-result .txt-time{
         margin-bottom:55px;
