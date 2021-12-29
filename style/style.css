@@ -21,6 +21,13 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #app {
     font-family: GmarketSansMedium;
     background-color: #5b2386;
@@ -132,7 +139,7 @@ input::placeholder{
   }
 
 
-.cont-inp .btn-exc, .btn-go, .btn-share {
+.cont-inp .btn-exc, .btn-open, .btn-copy, .btn-url {
     /* width: 565px; */
     /* padding값과 함께 박스 크기 결정하고 있기 때문에 width 없어도됨 */
     padding: 21px 49px;
@@ -185,7 +192,7 @@ input::placeholder{
     vertical-align: top;
 }
 
-.btn-share {
+.btn-copy {
     margin-left: 18px;
     background-color: #ffff;
 }
@@ -201,6 +208,49 @@ input::placeholder{
     width: 125px;
     height: 25px;
     margin: 0 auto 20px;
+}
+
+/* 모달창 */
+.modal-background { 
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.modal { 
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.modal-tit {
+    font-family: 'OTEnjoystoriesBA';
+    color: #5B2386;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 106px;
+    margin: 76px 0 4px 0;
+}
+.modal-txt {
+    font-family: 'OTEnjoystoriesBA';
+    color: #5B2386;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 29px;
+}
+.modal img {
+    width: 341px;
+    margin: 0 auto 74px;
 }
 
 
@@ -276,11 +326,11 @@ input::placeholder{
     .cont-result .txt-wannabe, .cont-result .txt-time{
         line-height:14px;
     }
-    .cont-inp .btn-exc, .btn-go, .btn-share{
+    .cont-inp .btn-exc, .btn-open, .btn-copy{
         font-size:14px;
         padding:12px 17px;
     }
-    .btn-share{
+    .btn-copy{
         margin-left:14px;
     }
     .cont-footer .img-footer{
